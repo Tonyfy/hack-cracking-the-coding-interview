@@ -51,3 +51,15 @@ void removeDuplicate5(char s[])
     s[p] = '\0';  //结束字符，添加结束符
 }
 ```
+
+## 1.4 
+
+Write a method to decide if two strings are anagrams or not.
+
+判断两个字符串单词是否为字谜（仅字符顺序不一致）
+
+## 1.5 
+
+Write a method to replace all spaces in a string with ‘%20’.
+
+替换字符串中的所有空格为“%20”。
