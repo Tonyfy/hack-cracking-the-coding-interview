@@ -104,9 +104,10 @@ void replace0(char *c)
 }
 int main(){
     const int len = 100;  //事先分配好足够大的空间
-    char c[len] = "anh jsdha da da ad q df  ";
+    char c[len] = "1 2 ";
     //cout<<replace1(c)<<endl;
    // replace2(c);
+	cout << strlen(c) << endl;
 	replace0(c);
     cout<<c<<endl;
     return 0;

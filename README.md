@@ -58,8 +58,20 @@ Write a method to decide if two strings are anagrams or not.
 
 判断两个字符串单词是否为字谜（仅字符顺序不一致）
 
+* 思路：统计两个字符串的字符直方图h1[256],h2[256]。如果两个直方图一样则为字谜。
+
 ## 1.5 
 
 Write a method to replace all spaces in a string with ‘%20’.
 
 替换字符串中的所有空格为“%20”。
+
+* 思路：1，一趟遍历得到空格个数N;2,计算新字符串的规模len+2*N，并从尾部开始将源字符串写入新字符串；3，注意结尾的"\0"。
+
+
+## 1.7
+
+Write an algorithm such that if an element in an MxN matrix is 0, its entire row and column is set to 0.
+实现算法使得矩阵中只要某处有0，就将该行和列的所有元素都变为0
+
+* 思路：如果迭代进行矩阵元素的更改，那么可想，最后整个矩阵变成0了。我们可以用O(MxN)的空间记录某个元素是否为0，然后再改掉对应的元素。也可以只有M+N的空间，记录某行某列是否有0。
