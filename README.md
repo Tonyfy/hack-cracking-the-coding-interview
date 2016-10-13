@@ -74,4 +74,26 @@ Write a method to replace all spaces in a string with ‘%20’.
 Write an algorithm such that if an element in an MxN matrix is 0, its entire row and column is set to 0.
 实现算法使得矩阵中只要某处有0，就将该行和列的所有元素都变为0
 
-* 思路：如果迭代进行矩阵元素的更改，那么可想，最后整个矩阵变成0了。我们可以用O(MxN)的空间记录某个元素是否为0，然后再改掉对应的元素。也可以只有M+N的空间，记录某行某列是否有0。
+* 思路：如果迭代进行矩阵元素的更改，那么可想，最后整个矩阵变成0了。我们可以用O(MxN)的空间记录某个元素是否为0，然后再改掉对应的元素。也可以只有M+N的空间，记录某行某列是否有0。再次遍历矩阵时，若该行有零或该列有零，即改为0.
+
+## 1.8 
+
+Assume you have a method isSubstring which checks if one word is a substring of another. Given two strings, s1 and s2, write code to check if s2 is a rotation of s1 using only one call to isSubstring (i.e., “waterbottle” is a rotation of “erbottlewat”).
+
+只调用一次isSubstring方法，判断字符串s2是否可由s1旋转而来。
+
+思路：
+1，如果s1和s2长度不同，判否；
+2，在s2后面接上s2，判断s1是否为s2的子串，若是，判是。
+
+
+# 链表
+
+## 2.1
+
+Write code to remove duplicates from an unsorted linked list.
+FOLLOW UP
+How would you solve this problem if a temporary buffer is not allowed?
+从一个无序链表中去除重复的元素，更进一步，可以不使用临时的buffer吗
+* 思路：若可使用buffer，那么使用一个set集合存放出现的元素，遍历一次即可删除所有重复的。不使用buffer时，使用两个游标，两层循环完成。
+
